@@ -1,1 +1,33 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+html {
+  box-sizing: border-box;
+  //   height: 1000px;
+}
+
+*,
+*::before,
+::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  box-shadow: -10px 0 10px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: -10px 0 10px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -10px 10px -5px rgba(0, 0, 0, 0.1);
+}
+
+.is-hidden {
+  display: none;
+}
+
+body {
+  // background-image: url(../images/cat-1044914_1280.jpg);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+
+  padding: 30px;
+  font-family: 'Shrikhand', sans-serif;
+}

@@ -4,12 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./sass/index.scss" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
     <title>Homework 10</title>
   </head>
   <body>
-    <select class="breed-select"></select>
-    <p class="loader">Loading data, please wait...</p>
-    <p class="error">Oops! Something went wrong! Try reloading the page!</p>
+    <h1 class="main-title">Cats breed info</h1>
+    <div class="select-form">
+      <select class="breed-select">
+        <option value disabled selected>Select breed...</option>
+      </select>
+    </div>
+
+    <!-- <p class="loader">Loading data, please wait...</p>
+    <p class="error">Oops! Something went wrong! Try reloading the page!</p> -->
     <div class="cat-info"></div>
 
     <script src="js/index.js" type="module"></script>

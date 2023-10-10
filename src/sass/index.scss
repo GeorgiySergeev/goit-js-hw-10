@@ -3,3 +3,58 @@
   width: 200px;
   height: 30px;
 }
+
+.main-title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #363636;
+  font-size: 120px;
+}
+.select-form {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  //background-color: rgb(94, 231, 231);
+  margin-bottom: 50px;
+}
+
+.breed-select {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: rgb(220, 243, 243);
+}
+
+.cat-info {
+  color: #000000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.cat-img {
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+}
+.title {
+  text-align: center;
+  font-size: 36px;
+}
+.img-discr {
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.cat-options {
+  margin: 0 auto;
+  width: 400px;
+  font-weight: 500;
+}

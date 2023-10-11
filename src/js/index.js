@@ -23,7 +23,7 @@ fetchBreeds() // load all breeds
     selectRef.classList.remove('is-hidden');
   })
   .catch(error => {
-    console.log(error);
+    console.log(error.message);
 
     Notiflix.Loading.remove();
     reportError();

@@ -7,35 +7,33 @@ axios.defaults.baseURL = 'https://api.thecatapi.com/v1/';
 
 //================Load all breeds
 function fetchBreeds() {
-  return axios
-    .get('breeds')
-    .then(response => {
-      if (response.status !== 200) {
-        throw new Error(resp.status);
-      }
-      return response; //бработка успешного запроса
-    })
-    .catch(error => {
-      // обработка ошибки
-      console.log(error.message);
-    });
+  return axios.get('breeds').then(response => {
+    // if (response.status !== 200) {
+    //   throw new Error(resp.status);
+    // }
+
+    return response.data; //бработка успешного запроса
+  });
+  // .catch(error => {
+  //   // обработка ошибки
+  //   console.log(error.message);
+  // });
 }
 
 //==============Search by ID
 
 function fetchCatByBreed(breedId) {
-  return axios
-    .get(`images/search?breed_ids=${breedId}`)
-    .then(response => {
-      if (response.status !== 200) {
-        throw new Error(resp.status);
-      }
-      return response.data[0]; //бработка успешного запроса
-    })
-    .catch(error => {
-      // обработка ошибки
-      console.log(error.message);
-    });
+  return axios.get(`images/search?breed_ids=${breedId}`).then(response => {
+    // if (response.status !== 200) {
+    //   throw new Error(resp.status);
+    // }
+
+    return response.data; //бработка успешного запроса
+  });
+  // .catch(error => {
+  //   // обработка ошибки
+  //   console.log(error.message);
+  // });
 }
 
 export { fetchBreeds, fetchCatByBreed };
